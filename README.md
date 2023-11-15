@@ -1,2 +1,2 @@
 # Race-Time
-This is my Git Repository for Working with Data and Code A3 - Jack MacKenzie 24476879
+This is my Git Repository for Working with Data and Code A3. Three files are stored in this repository. The first is the README file that you are reading now. AllCode contains all of the HTML, CSS and JavaScript for the RaceTime website. RaceTimeLogoResize.png contains the logo that is featured on the website. It is recommended that you run this code using Replit or a similar code editor. As backup, you can view the Replit for the website here: https://replit.com/join/lqibjloykt-jackmackenzie8 
