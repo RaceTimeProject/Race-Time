@@ -3,6 +3,6 @@ This is my Git Repository for Working with Data and Code A3. Three files are sto
 
 References: 
 
-W3Schools. (n.d.). How TO - JavaScript Countdown Timer (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_countdown.asp 
-W3Schools. (n.d.). How TO - Tab Headers. (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_tab_header.asp 
-W3Schools. (n.d.). How TO - Tabs (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_tabs.asp 
+<p> W3Schools. (n.d.). <em> How TO - JavaScript Countdown Timer </em> (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_countdown.asp </p>
+<p> W3Schools. (n.d.). <em> How TO - Tab Headers </em> (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_tab_header.asp </p>
+<p> W3Schools. (n.d.). <em> How TO - Tabs </em> (Version 1) [Computer Code]. W3Schools. https://www.w3schools.com/howto/howto_js_tabs.asp </p>
