@@ -1,0 +1,3764 @@
+<!DOCTYPE html>
+<html>
+
+  <img src="RaceTimeLogoResize.png" style="height: 200px; width: 800px; align: left;"> 
+
+  <h2 style= "font-family: TahVerdana, Geneva, Tahoma, sans-serif; font-size: 20px; color: white;"
+  <h3 style= "font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 50px; color: white;" 
+  <p style= "font-family: TahVerdana, Geneva, Tahoma, sans-serif; font-size: 30px; color: white;" 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale+1"> 
+  
+  <style>
+  
+    body {background-color: #929292;}
+
+  .tablink1 {
+    background-color: black;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 10px; 
+    width: 25%;
+  }
+  .tablink1:hover {
+    background-color: #595959;
+  }
+
+  .tablink2 {
+    background-color: #ee0000;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px; 
+    width: 25%;
+  }
+  .tablink2:hover {
+    background-color: #ff4d4d;
+  }
+  
+  .tablink3 {
+    background-color: #0375b9;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px;
+    width: 25%;
+  }
+  .tablink3:hover {
+    background-color: #008ce0;
+  }
+
+  .tablink4 {
+    background-color: #042b60;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px;
+    width: 25%;
+  }
+  .tablink4:hover {
+    background-color: #436ba2;
+
+  }
+  
+  .tablink5 {
+    background-color: #4d4d4f;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px;
+    width: 25%;
+  }
+  .tablink5:hover {
+    background-color: #9b9b9b;
+
+  }
+
+  .tablink6 {
+    background-color: #c4023f;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px;
+    width: 25%;
+  }
+  .tablink6:hover {
+    background-color: #ff3272;
+
+  }
+
+  .tablink7 {
+    background-color: #fed55a;  
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 14px 16px
+    border-radius: 50px;
+    width: 25%;
+  }
+  .tablink7:hover {
+    background-color: #fde8a8;
+
+  }
+</style>
+</head>
+<body>
+
+<div class="Tab">
+<button class="tablink1" onclick="opentab(event, 'Home')" id=defaultOpen>Home</button>
+<button class="tablink2" onclick="opentab(event, 'Formula 1')">Formula1</button>
+<button class="tablink3" onclick="opentab(event, 'IndyCar')">IndyCar</button>
+<button class="tablink4" onclick="opentab(event, 'World Endurance Championship')">World Endurance Championship</button>
+<button class="tablink5" onclick="opentab(event, 'IMSA WeatherTech SportsCar Championship')">IMSA WeatherTech SportsCar Championship</button>
+<button class="tablink6" onclick="opentab(event, 'MotoGP')">MotoGP</button>
+<button class="tablink7" onclick="opentab(event, 'NASCAR Cup Series')">NASCAR Cup Series</button>
+</div>
+
+  <div id="Home" class="tabcontent">
+    <Body>
+    <h2>Welcome to RaceTime! This is your one stop shop for counting down the days, minutes, hours and seconds until your favourite motor racing events across the world throughout 2024</h2>
+    </Body> 
+  </div>
+
+<div id="Formula 1" class="tabcontent">
+  <h1>Formula 1</h1>
+  <h2>All weekend start times are set to midnight local time on the first day of the race weekend as a specific start time is not yet available</h2>
+  
+  <Body>
+    <h3>Bahrain Grand Prix - Bahrain International Circuit:</h3>
+    <script>
+
+    var Timer1 = new Date("Feb 28, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer1 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 1").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 1").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 1"></p>
+  </Body>
+  <Body>
+    <h3>Saudi Arabian Grand Prix - Jeddah Corniche Circuit:</h3>
+    <script>
+
+    var Timer2 = new Date("Mar 6, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer2 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 2").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 2").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 2"></p>
+  </Body>
+  <Body>
+    <h3>Australian Grand Prix - Albert Park Circuit:</h3>
+    <script>
+
+    var Timer3 = new Date("Mar 21, 2024 14:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer3 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 3").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 3").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 3"></p>
+  </Body>
+  <Body>
+    <h3>Japanese Grand Prix - Suzuka International Racing Course:</h3>
+    <script>
+
+    var Timer4 = new Date("April 4, 2024 15:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer4 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 4").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 4").innerHTML = "Event has startedD";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 4"></p>
+  </Body>
+  <Body>
+    <h3>Chinese Grand Prix - Shanghai International Circuit:</h3>
+    <script>
+
+    var Timer5 = new Date("April 18, 2024 16:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer5 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 5").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 5").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 5"></p>
+  </Body>
+  <Body>
+    <h3>Miami Grand Prix - Miami International Autodrome:</h3>
+    <script>
+
+    var Timer6 = new Date("May 3, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer6 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 6").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 6").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 6"></p> 
+  </Body>
+  <Body>
+    <h3>Emilia Romagna Grand Prix - Imola Circuit:</h3>
+    <script>
+
+    var Timer7 = new Date("May 16, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer7 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 7").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 7").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+  <p id="Timer 7"></p>
+  </Body>
+  <Body>
+    <h3>Monaco Grand Prix - Circuit de Monaco:</h3>
+    <script>
+
+    var Timer8 = new Date("May 23, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer8 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 8").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 8").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 8"></p>
+  </Body>
+  <Body>
+    <h3>Canadian Grand Prix - Circuit Gilles Villeneuve:</h3>
+    <script>
+
+    var Timer9 = new Date("June 7, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer9 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 9").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 9").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 9"></p>
+  </Body>
+  <Body>
+    <h3>Spanish Grand Prix - Circuit de Barcelona-Catalunya:</h3>
+    <script>
+
+    var Timer10 = new Date("June 20, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer10 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 10").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 10").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 10"></p>
+  </Body>
+  <Body>
+    <h3>Austrian Grand Prix - Red Bull Ring:</h3>
+    <script>
+
+    var Timer11 = new Date("June 27, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer11 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 11").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 11").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 11"></p>
+  </Body>
+  <Body>
+    <h3>British Grand Prix - Silverstone Circuit:</h3>
+    <script>
+
+    var Timer12 = new Date("July 4, 2024 23:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer12 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 12").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 12").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 12"></p>
+  </Body>
+  <Body>
+    <h3>Hungarian Grand Prix - Hungaroring:</h3>
+    <script>
+
+    var Timer13 = new Date("July 18, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer13 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 13").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 13").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 13"></p>
+  </Body>
+  <Body>
+    <h3>Belgian Grand Prix - Circuit de Spa-Francorchamps:</h3>
+    <script>
+
+    var Timer14 = new Date("July 25, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer14 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 14").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 14").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 14"></p>
+  </Body>
+  <Body>
+    <h3>Dutch Grand Prix - Circuit Zandvoort:</h3>
+    <script>
+
+    var Timer15 = new Date("August 24, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer15 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 15").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 15").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 15"></p>
+  </Body>
+  <Body>
+    <h3>Italian Grand Prix - Monza Circuit:</h3>
+    <script>
+
+    var Timer16 = new Date("August 29, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer16 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 16").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 16").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 16"></p>
+  </Body>
+  <Body>
+    <h3>Azerbaijan Grand Prix - Baku City Circuit:</h3>
+    <script>
+
+    var Timer17 = new Date("September 12, 2024 20:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer17 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 17").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 17").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 17"></p>
+  </Body>
+  <Body>
+    <h3>Singapore Grand Prix - Marina Bay Street Circuit:</h3>
+    <script>
+
+    var Timer18 = new Date("September 19, 2024 16:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer18 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 18").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 18").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 18"></p>
+  </Body>
+  <Body>
+    <h3>United States Grand Prix - Circuit of the Americas:</h3>
+    <script>
+
+    var Timer19 = new Date("October 18, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer19 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 19").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 19").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 19"></p>
+  </Body>
+  <Body>
+    <h3>Mexico City Grand Prix - Autódromo Hermanos Rodríguez: </h3>
+    <script>
+
+    var Timer20 = new Date("October 25, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer20 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 20").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 20").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 20"></p>
+  </Body>
+  <Body>
+    <h3>São Paulo Grand Prix - Interlagos Circuit:</h3>
+    <script>
+
+    var Timer21 = new Date("November 1, 2024 03:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer21 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 21").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 21").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 21"></p>
+  </Body>
+  <Body>
+    <h3>Las Vegas Grand Prix - Las Vegas Street Circuit:</h3>
+    <script>
+
+    var Timer22 = new Date("November 21, 2024 08:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer22 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 22").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 22").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 22"></p>
+  </Body>
+  <Body>
+    <h3>Qatar Grand Prix - Lusail International Circuit:</h3>
+    <script>
+
+    var Timer23 = new Date("November 28, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer23 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 23").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 23").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 23"></p>
+  </Body>
+  <Body>
+    <h3>Abu Dhabi Grand Prix - Yas Marina Circuit:</h3>
+    <script>
+
+    var Timer24 = new Date("December 5, 2024 20:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer24 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 24").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 24").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 24"></p>
+  </Body>
+</div>
+
+<div id="IndyCar" class="tabcontent">
+
+  <h1>IndyCar</h1>
+  <h2>All weekend start times are set to midnight local time on the first day of the race weekend as a specific start time is not yet available</h2>
+
+  <Body>
+    <h3>Firestone Grand Prix of St. Petersburg - Streets of St. Petersburg:</h3>
+    <script>
+
+    var Timer25 = new Date("March 8, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer25 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 25").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 25").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 25"></p>
+  </Body>
+  <Body>
+    <h3>The Thermal Club $1 Million Challenge - The Thermal Club:</h3>
+    <script>
+
+    var Timer26 = new Date("March 22, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer26 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 26").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 26").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 26"></p>
+  </Body>
+  <Body>
+    <h3>Acura Grand Prix of Longbeach - Streets of Longbeach:</h3>
+    <script>
+
+    var Timer27 = new Date("April 19, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer27 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 27").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 27").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 27"></p>
+  </Body>
+  <Body>
+    <h3>Indy Grand Prix of Alabama - Barber Motorsports Park:</h3>
+    <script>
+
+    var Timer28 = new Date("April 26, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer28 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 28").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 28").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 28"></p>
+  </Body>
+  <Body>
+    <h3>Sonsio Grand Prix - Indianapolis Motor Speedway Road Course:</h3>
+    <script>
+
+    var Timer29 = new Date("May 10, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer29 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 29").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 29").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 29"></p>
+  </Body>
+  <Body>
+    <h3>108th Running of the Indianapolis 500 - Indianapolis Motor Speedway:</h3>
+    <script>
+
+    var Timer30 = new Date("May 26, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer30 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 30").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 30").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 30"></p>
+  </Body>
+  <Body>
+    <h3>Chevrolet Detroit Grand Prix - Streets of Detroit:</h3>
+    <script>
+
+    var Timer31 = new Date("May 31, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer31 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 31").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 31").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 31"></p>
+  </Body>
+  <Body>
+    <h3>Grand Prix of Road America - Road America:</h3>
+    <script>
+
+    var Timer32 = new Date("June 7, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer32 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 32").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 32").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 32"></p>
+  </Body>
+  <Body>
+    <h3>Firestone Grand Prix of Monterey - WeatherTech Raceway Laguna Seca:</h3>
+    <script>
+
+    var Timer33 = new Date("June 21, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer33 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 33").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 33").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 33"></p>
+  </Body>
+  <Body>
+    <h3>Indy 200 at Mid-Ohio - Mid-Ohio Sports Car Course:</h3>
+    <script>
+
+    var Timer34 = new Date("July 5, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer34 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 34").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 34").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 34"></p>
+  </Body>
+  <Body>
+    <h3>Iowa Speedway - Iowa Speedway:</h3>
+    <script>
+
+    var Timer35 = new Date("July 12, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer35 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 35").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 35").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 35"></p>
+  </Body>
+  <Body>
+    <h3>Honda Indy Toronto - Exhibition Place:</h3>
+    <script>
+
+    var Timer36 = new Date("July 19, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer36 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 36").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 36").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 36"></p>
+  </Body>
+  <Body>
+    <h3>Bommarito Automotive Group 500 - World Wide Technology Raceway:</h3>
+    <script>
+
+    var Timer37 = new Date("August 15, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer37 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 37").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 37").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 37"></p>
+  </Body>
+  <Body>
+    <h3>Grand Prix of Portland - Portland International Raceway:</h3>
+    <script>
+
+    var Timer38 = new Date("August 23, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer38 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 38").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 38").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 38"></p>
+  </Body>
+  <Body>
+    <h3>Milwaukee Mile - Milwaukee Mile:</h3>
+    <script>
+
+    var Timer39 = new Date("August 30, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer39 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 39").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 39").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 39"></p>
+  </Body>
+  <Body>
+    <h3>Big Machine Music City Grand Prix - Nashville Street Circuit:</h3>
+    <script>
+
+    var Timer40 = new Date("September 13, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer40 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 40").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 40").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 40"></p>
+  </Body>
+</div>
+
+<div id="World Endurance Championship" class="tabcontent">
+
+<h1>World Endurance Championship</h1>
+
+<h2>All weekend start times are set to midnight of day 1 of the race weekend as a specific start time is not yet available apart from the 24 Hours of Le Mans</h2>
+
+  <Body>
+    <h3>Qatar 1812 km - Losail International Circuit:</h3>
+    <script>
+
+    var Timer41 = new Date("February 28, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer41 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 41").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 41").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 41"></p>
+  </Body>
+  <Body>
+    <h3>6 Hours of Imola - Imola Circuit:</h3>
+    <script>
+
+    var Timer42 = new Date("April 18, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer42 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 42").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 42").innerHTML = "Event has started";
+      }
+    }, 1000);
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 42"></p>
+  </Body>
+  <Body>
+    <h3>TotalEnergies 6 Hours of Spa-Francorchamps - Circuit de Spa-Francorchamps:</h3>
+    <script>
+
+    var Timer43 = new Date("May 8, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer43 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 43").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 43").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 43"></p>
+  </Body>
+  <Body>
+    <h3>24 Hours of Le Mans - Circuit de la Sarthe:</h3>
+    <script>
+
+    var Timer44 = new Date("June 12, 2024 12:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer44 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 44").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 44").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 44"></p>
+  </Body>
+  <Body>
+    <h3>6 Hours of São Paulo - Interlagos Circuit:</h3>
+    <script>
+
+    var Timer45 = new Date("July 12, 2024 03:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer45 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 45").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 45").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 45"></p>
+  </Body>
+  <Body>
+    <h3>Lone Star Le Mans - Circuit of the Americas:</h3>
+    <script>
+
+    var Timer46 = new Date("August 30, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer46 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 46").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 46").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 46"></p>
+  </Body>
+  <Body>
+    <h3>6 Hours of Fuji - Fuji Speedway:</h3>
+    <script>
+
+    var Timer47 = new Date("September 12, 2024 15:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer47 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 47").innerHTML = days + ":" + hours + ":" +
+       minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 47").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 47"></p>
+  </Body>
+  <Body>
+    <h3>8 Hours of Bahrain - Bahrain International Circuit:</h3>
+    <script>
+
+    var Timer48 = new Date("October 30, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer48 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 48").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 48").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 48"></p>
+  </Body>
+</div>
+
+<div id="IMSA WeatherTech SportsCar Championship" class="tabcontent">
+
+  <h1>IMSA WeatherTech Sportscar Championship</h1>
+  <h2>All weekend start times are set to midnight local time on the first day of the race weekend as a specific start time is not yet available</h2>
+
+
+  <Body>
+    <h3>Rolex 24 at Daytona - Daytona International Circuit:</h3>
+    <script>
+
+    var Timer49 = new Date("January 25, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer49 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 49").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 49").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 49"></p>
+  </Body>
+  <Body>
+    <h3>Mobil 1 Twelve Hours of Sebring - Sebring International Racewway:</h3>
+    <script>
+
+    var Timer50 = new Date("March 13, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer50 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 50").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 50").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 50"></p>
+  </Body>
+  <Body>
+    <h3>Acura Grand Prix of Long Beach - Long Beach Street Circuit:</h3>
+    <script>
+
+    var Timer51 = new Date("April 19, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer51 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 51").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 51").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 51"></p>
+  </Body>
+  <Body>
+    <h3>Motul Course De Monterey Powered By Hyundai N - WeatherTech Raceway Laguna Seca:</h3>
+    <script>
+
+    var Timer52 = new Date("May 10, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer52 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 52").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 52").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 52"></p>
+  </Body>
+  <Body>
+    <h3>Detroit Grand Prix - Streets of Detroit:</h3>
+    <script>
+
+    var Timer53 = new Date("May 31, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer53 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 53").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 53").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 53"></p>
+  </Body>
+  <Body>
+    <h3>Sahlen's Six Hours of the Glen - Watkins Glen International:</h3>
+    <script>
+
+    var Timer54 = new Date("June 20, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer54 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 54").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 54").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 54"></p>
+  </Body>
+  <Body>
+    <h3>Chevrolet Grand Prix - Canadian Tire Motorsport Park:</h3>
+    <script>
+
+    var Timer55 = new Date("July 12, 2024 07:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer55 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 55").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 55").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 55"></p>
+  </Body>
+  <Body>
+    <h3>IMSA Sportscar Weekend - Road America:</h3>
+    <script>
+
+    var Timer56 = new Date("August 2, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer56 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 56").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 56").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 56"></p>
+  </Body>
+  <Body>
+    <h3>Michelin GT Challenge at VIR - Virginia International Raceway:</h3>
+    <script>
+
+    var Timer57 = new Date("August 23, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer57 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 57").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 57").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 57"></p>
+  </Body>
+  <Body>
+    <h3>Tirerack.com Battle on the Bricks - Indianapolis Motor Speedway:</h3>
+    <script>
+
+    var Timer58 = new Date("September 20, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer58 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 58").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 58").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 58"></p>
+  </Body>
+  <Body>
+    <h3>Motul Petit Le Mans - Michelin Raceway Road Atlanta:</h3>
+    <script>
+
+    var Timer59 = new Date("October 9, 2024 04:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer59 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 59").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 59").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 59"></p>
+  </Body>
+</div>
+
+<div id="MotoGP" class="tabcontent">
+
+  <h1>MotoGP</h1>
+  <h2>All weekend start times are set to midnight local time on the first day of the race weekend as a specific start time is not yet available</h2>
+
+
+  <Body>
+    <h3>Grand Prix of Qatar - Lusail International Circuit:</h3>
+    <script>
+
+    var Timer60 = new Date("March 7, 2024 21:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer60 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 60").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 60").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 60"></p>
+  </Body>
+  <Body>
+    <h3>Grande Prémio de Portugal - Algarve International Circuit:</h3>
+    <script>
+
+    var Timer61 = new Date("March 22, 2024 00:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer61 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 61").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 61").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 61"></p>
+  </Body>
+  <Body>
+    <h3>Gran Premio de la República Argentina - Autódromo Termas de Río Hondo:</h3>
+    <script>
+
+    var Timer62 = new Date("April 5, 2024 03:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer62 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 62").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 62").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 62"></p>
+  </Body>
+  <Body>
+    <h3>Grand Prix of the Americas - Circuit of the Americas:</h3>
+    <script>
+
+    var Timer63 = new Date("April 12, 2024 05:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer63 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 63").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 63").innerHTML = "Event has started";
+      }
+    }, 1000); 
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 63"></p>
+  </Body>
+  <Body>
+    <h3>Gran Premio de España - Circuito de Jerez:</h3>
+    <script>
+
+    var Timer64 = new Date("April 25, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer64 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 64").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 64").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 64"></p> 
+  </Body>
+  <Body>
+    <h3>Grand Prix de France - Circuit Bugatti:</h3>
+    <script>
+
+    var Timer65 = new Date("May 9, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer65 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 65").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 65").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 65"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Premi de Catalunya - Circuit de Barcelona-Catalunya:</h3>
+    <script>
+
+    var Timer66 = new Date("May 23, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer66 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 66").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 66").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 66"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Premio d'Italia - Autodromo Internazionale del Mugello:</h3>
+    <script>
+
+    var Timer67 = new Date("May 30, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer67 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 67").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 67").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 67"></p> 
+  </Body>
+  <Body>
+    <h3>Grand Prix of Kazakhstan - Sokol International Racetrack:</h3>
+    <script>
+
+    var Timer68 = new Date("June 13, 2024 18:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer68 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 68").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 68").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 68"></p> 
+  </Body>
+  <Body>
+    <h3>TT Assen - TT Circuit Assen:</h3>
+    <script>
+
+    var Timer69 = new Date("June 27, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer69 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 69").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 69").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 69"></p> 
+  </Body>
+  <Body>
+    <h3>Motorrad Grand Prix Deutschland - Sachsenring:</h3>
+    <script>
+
+    var Timer70 = new Date("July 4, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer70 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 70").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 70").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 70"></p> 
+  </Body>
+  <Body>
+    <h3>British Grand Prix - Silverstone Circuit:</h3>
+    <script>
+
+    var Timer71 = new Date("August 1, 2024 23:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer71 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 71").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 71").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 71"></p> 
+  </Body>
+  <Body>
+    <h3>Motorrad Grand Prix von Österreich - Red Bull Ring:</h3>
+    <script>
+
+    var Timer72 = new Date("August 15, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer72 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 72").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 72").innerHTML = "Event has started";
+      }
+    }, 1000);  
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 72"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Premio de Aragón - MotorLand Aragón:</h3>
+    <script>
+
+    var Timer73 = new Date("August 29, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer73 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 73").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 73").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 73"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Premio di San Marino e della Riviera di Rimini - Misano World Circuit Marco Simoncelli:</h3>
+    <script>
+
+    var Timer74 = new Date("September, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer74 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 74").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 74").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 74"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Prix of India - Buddh International Circuit:</h3>
+    <script>
+
+    var Timer75 = new Date("September 19, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer75 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 75").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 75").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 75"></p> 
+  </Body>
+  <Body>
+    <h3>Pertamina Grand Prix of Indonesia - Pertamina Mandalika International Street Circuit:</h3>
+    <script>
+
+    var Timer76 = new Date("September 26, 2024 16:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer76 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 76").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 76").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 76"></p> 
+  </Body>
+  <Body>
+    <h3>Grand Prix of Japan - Mobility Resort Motegi:</h3>
+    <script>
+
+    var Timer77 = new Date("October 3, 2024 15:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer77 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 77").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 77").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 77"></p> 
+  </Body>
+  <Body>
+    <h3>Australian Motorcycle Grand Prix - Phillip Island Grand Prix Circuit:</h3>
+    <script>
+
+    var Timer78 = new Date("October 17, 2024 13:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer78 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 78").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 78").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 78"></p> 
+  </Body>
+  <Body>
+    <h3>Thailand Grand Prix - Chang International Circuit:</h3>
+    <script>
+
+    var Timer79 = new Date("October 31, 2024 17:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer79 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 79").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 79").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 79"></p> 
+  </Body>
+  <Body>
+    <h3>Petronas Grand Prix of Malaysia - Petronas Sepang International Circuit:</h3>
+    <script>
+
+    var Timer80 = new Date("October 31, 2024 16:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer80 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 80").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 80").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 80"></p> 
+  </Body>
+  <Body>
+    <h3>Gran Premio de la Communitat Valenciana - Circuit Ricardo Tormo:</h3>
+    <script>
+
+    var Timer81 = new Date("November 14, 2024 23:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer81 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 81").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 81").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 81"></p> 
+  </Body>
+</div>
+
+<div id="NASCAR Cup Series" class="tabcontent">
+
+  <h1>NASCAR Cup Series</h1>
+  <h2>All timers are set to race start time</h2>
+
+  <Body>
+    <h3>Busch Light Clash at The Coliseum - Los Angeles Memorial Coliseum:</h3>
+    <script>
+
+    var Timer82 = new Date("February 5, 2024 01:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer82 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 82").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 82").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 82"></p> 
+  </Body>
+  <Body>
+    <h3>Bluegreen Vacations Duel - Daytona International Circuit:</h3>
+    <script>
+
+    var Timer83 = new Date("February 16, 2024 00:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer83 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 83").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 83").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 83"></p> 
+  </Body>
+  <Body>
+    <h3>Daytona 500 - Daytona International Speedway:</h3>
+    <script>
+
+    var Timer84 = new Date("February 18, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer84 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 84").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 84").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 84"></p> 
+  </Body>
+  <Body>
+    <h3>Ambetter Health 400 - Atlanta Motor Speedway:</h3>
+    <script>
+
+    var Timer85 = new Date("February 25, 2024 20:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer85 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 85").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 85").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 85"></p> 
+  </Body>
+  <Body>
+    <h3>Pennzoil 400 - Las Vegas Motor Speedway:</h3>
+    <script>
+
+    var Timer86 = new Date("March 3, 2024 20:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer86 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 86").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 86").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 86"></p> 
+  </Body>
+  <Body>
+    <h3>Shriners Children's 500 - Phoenix Raceway:</h3>
+    <script>
+
+    var Timer87 = new Date("March 10, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer87 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 87").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 87").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 87"></p> 
+  </Body>
+  <Body>
+    <h3>Food City 500 - Bristol Motor Speedway:</h3>
+    <script>
+
+    var Timer88 = new Date("March 17, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer88 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 88").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 88").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 88"></p> 
+  </Body>
+  <Body>
+    <h3>EchoPark Automotive Grand Prix - Circuit of the Americas:</h3>
+    <script>
+
+    var Timer89 = new Date("March 24, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer89 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 89").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 89").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 89"></p> 
+  </Body>
+  <Body>
+    <h3>Toyota Owners 400 - Richmond Rcaeway:</h3>
+    <script>
+
+    var Timer90 = new Date("March 31, 2024 23:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer90 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 90").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 90").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 90"></p> 
+  </Body>
+  <Body>
+    <h3>NOCCO 400 - Martinsville Speedway:</h3>
+    <script>
+
+    var Timer91 = new Date("April 7, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer91 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 91").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 91").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 91"></p> 
+  </Body>
+  <Body>
+    <h3>Autotrader EchoPark Automotive 400: - Texas Motor Speedway</h3>
+    <script>
+
+    var Timer92 = new Date("April 14, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer92 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 92").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 92").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 92"></p> 
+  </Body>
+  <Body>
+    <h3>Geico 500 - Talladega Superspeedway:</h3>
+    <script>
+
+    var Timer93 = new Date("April 21, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer93 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 93").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 93").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 93"></p> 
+  </Body>
+  <Body>
+    <h3>Würth 400 - Dover Motor Speedway:</h3>
+    <script>
+
+    var Timer95 = new Date("April 28, 2024 18:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer95 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 95").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 95").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 95"></p> 
+  </Body>
+  <Body>
+    <h3>AdventHealth 400 - Kansas Speedway:</h3>
+    <script>
+
+    var Timer96 = new Date("May 5, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer96 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 96").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 96").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 96"></p> 
+  </Body>
+  <Body>
+    <h3>Goodyear 400 - Darlington Raceway:</h3>
+    <script>
+
+    var Timer97 = new Date("May 12, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer97 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 97").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 97").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 97"></p> 
+  </Body>
+  <Body>
+    <h3>NASCAR All-Star Open - North Wilkesboro Speedway:</h3>
+    <script>
+
+    var Timer98 = new Date("May 19, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer98 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 98").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 98").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 98"></p> 
+  </Body>
+  <Body>
+    <h3>NASCAR All-Star Race - North Wilkesboro Speedway:</h3>
+    <script>
+
+    var Timer99 = new Date("May 20, 2024 00:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer99 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 99").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 99").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 99"></p> 
+  </Body>
+  <Body>
+    <h3>Coca-Cola 600 - Charlotte Motor Speedway:</h3>
+    <script>
+
+    var Timer100 = new Date("May 26, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer100 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 100").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 100").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 100"></p> 
+  </Body>
+  <Body>
+    <h3>Enjoy Illinois 300 presented by TicketSmarter - World Wide Technology Raceway:</h3>
+    <script>
+
+    var Timer101 = new Date("June 2, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer101 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 101").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 101").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 101"></p> 
+  </Body>
+  <Body>
+    <h3>Toyota/Save Mart 350 - Sonoma Raceway:</h3>
+    <script>
+
+    var Timer102 = new Date("June 9, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer102 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 102").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 102").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 102"></p> 
+  </Body>
+  <Body>
+    <h3>Iowa NASCAR Cup Race - Iowa Speedway:</h3>
+    <script>
+
+    var Timer103 = new Date("June 16, 2024 23:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer103 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 103").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 103").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 103"></p> 
+  </Body>
+  <Body>
+    <h3>Crayon 301 - New Hampshire Motor Speedway:</h3>
+    <script>
+
+    var Timer104 = new Date("June 23, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer104 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 104").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 104").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 104"></p> 
+  </Body>
+  <Body>
+    <h3>Ally 400 - Nashville Superspeedway:</h3>
+    <script>
+
+    var Timer105 = new Date("June 30, 2024 19:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer105 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 105").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds; 
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 105").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 105"></p> 
+  </Body>
+  <Body>
+    <h3>Grant Park 165 - Chicago Street Course:</h3>
+    <script>
+
+    var Timer106 = new Date("July 7, 2024 20:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer106 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 106").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 106").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 106"></p> 
+  </Body>
+  <Body>
+    <h3>HighPoint.com 400 - Pocono Raceway:</h3>
+    <script>
+
+    var Timer107 = new Date("July 14, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer107 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 107").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 107").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 107"></p> 
+  </Body>
+  <Body>
+    <h3>Brickyard 400 - Indianapolis Motor Speedway:</h3>
+    <script>
+
+    var Timer108 = new Date("July 21, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer108 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 108").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 108").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 108"></p> 
+  </Body>
+  <Body>
+    <h3>Cook Out 400 - Richmond Raceway:</h3>
+    <script>
+
+    var Timer109 = new Date("August 11, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer109 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 109").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 109").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 109"></p> 
+  </Body>
+  <Body>
+    <h3>FireKeepers Casino 400 - Michigan International Speedway:</h3>
+    <script>
+
+    var Timer110 = new Date("August 18, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer110 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 110").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 110").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 110"></p> 
+  </Body>
+  <Body>
+    <h3>Coke Zero 400 - Daytona International Speedway:</h3>
+    <script>
+
+    var Timer111 = new Date("August 24 2024 23:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer111 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 111").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 111").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 111"></p> 
+  </Body>
+  <Body>
+    <h3>Cook Out Southern 500 - Darlington Raceway:</h3>
+    <script>
+
+    var Timer112 = new Date("September 1, 2024 22:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer112 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 112").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 112").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 112"></p> 
+  </Body>
+  <Body>
+    <h3>Quaker State 400 Presented by Walmart - Atlanta Motor Speedway:</h3>
+    <script>
+
+    var Timer113 = new Date("September 8, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer113 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 113").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 113").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 113"></p> 
+  </Body>
+  <Body>
+    <h3>Go Bowling at The Glen - Watkins Glen International:</h3>
+    <script>
+
+    var Timer114 = new Date("September 15, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer114 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 114").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 114").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 114"></p> 
+  </Body>
+  <Body>
+    <h3>Bass Pro Shops Night Race - Bristol Motor Speedway:</h3>
+    <script>
+
+    var Timer115 = new Date("September 21, 2024 23:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer115 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 115").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 115").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 115"></p> 
+  </Body>
+  <Body>
+    <h3>Hollywood Casino 400 Presented by Barstool Sportsbook - Kansas Speedway:</h3>
+    <script>
+
+    var Timer116 = new Date("September 29, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer116 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 116").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 116").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 116"></p> 
+  </Body>
+  <Body>
+    <h3>YellaWood 500 - Talladega Superspeedway:</h3>
+    <script>
+
+    var Timer117 = new Date("October 6, 2024 18:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer117 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 117").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 117").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 117"></p> 
+  </Body>
+  <Body>
+    <h3>Bank of America Roval 400 - Charlotte Motor Speedway (Roval):</h3>
+    <script>
+
+    var Timer118 = new Date("October 13, 2024 18:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer118 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 118").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 118").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 118"></p> 
+  </Body>
+  <Body>
+    <h3>South Point 400 - Las Vegas Motor Speedway:</h3>
+    <script>
+
+    var Timer119 = new Date("October 20, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer119 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 119").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 119").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 119"></p> 
+  </Body>
+  <Body>
+    <h3>Dixie Vodka 400 - Homestead-Miami Speedway:</h3>
+    <script>
+
+    var Timer120 = new Date("October 27, 2024 18:30:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer120 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 120").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 120").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 120"></p> 
+  </Body>
+  <Body>
+    <h3>Xfinity 500 - Martinsville Speedway:</h3>
+    <script>
+
+    var Timer121 = new Date("November 3, 2024 19:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer121 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 121").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 121").innerHTML = "Event has started";
+      }
+    }, 1000);    
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 121"></p> 
+  </Body>
+  <Body>
+    <h3>NASCAR Cup Series Championship Race - Phoenix Raceway:</h3>
+    <script>
+
+    var Timer122 = new Date("November 10, 2024 20:00:00").getTime();
+
+    var x = setInterval(function() {
+
+      var now = new Date().getTime();
+
+      var distance = Timer122 - now;
+
+     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("Timer 122").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+       if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("Timer 122").innerHTML = "Event has started";
+      }
+    }, 1000);   
+    </script>
+  </Body>
+  <Body>
+    <p id="Timer 122"></p> 
+  </Body>
+</div>
+
+  <script>
+    function opentab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>  
